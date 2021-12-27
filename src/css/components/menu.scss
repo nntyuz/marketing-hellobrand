@@ -1,0 +1,123 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 800;
+  display: none;
+  .menu-box {
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #000;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    transform: translateX(-100%);
+    width: 50%;
+    @include lg {
+      width: calc(100% - 200px);
+    }
+    &.active {
+      transform: translateX(0);
+      .menu-list-item {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .menu-close {
+        opacity: 1;
+      }
+    }
+  }
+  .menu-header {
+    flex: 0 0 auto;
+    display: flex;
+    margin-right: 100px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
+  .menu-close {
+    width: 60px;
+    height: 60px;
+    background: var(--color-dark-4);
+    border-radius: 100%;
+    opacity: 0;
+    transition-delay: 350ms;
+    transition-duration: 300ms;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    @include lg {
+      padding-left: 100px;
+      margin: 0;
+    }
+    .menu-list-item {
+      transition: 400ms ease-in 250ms;
+      transform: translateX(-100%);
+      opacity: 0;
+      margin: 20px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .indent-left {
+        transform: translateX(100%);
+      }
+      &:nth-child(2) {
+        transition-delay: 300ms;
+        margin-right: auto;
+      }
+      &:nth-child(3) {
+        transition-delay: 550ms;
+      }
+      &:nth-child(4) {
+        transition-delay: 800ms;
+        margin-right: auto;
+      }
+      &:nth-child(5) {
+        transition-delay: 1s;
+      }
+      &:nth-child(6) {
+        transition-delay: 1s;
+        margin-right: auto;
+      }
+      &:nth-child(7) {
+        transition-delay: 1s;
+      }
+      &:nth-child(8) {
+        transition-delay: 1s;
+        margin-right: auto;
+      }
+    }
+    .menu-list-link {
+      font-family: 'Neue Machina', Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      color: var(--color-light-1);
+      text-transform: uppercase;
+      line-height: 1;
+      display: flex;
+      align-items: flex-start;
+      white-space: nowrap;
+      justify-content: flex-end;
+      &:hover {
+        transform: translateX(5%);
+      }
+    }
+    .menu-list-number {
+      font-size: 0.4em;
+      color: #868686;
+      display: inline-block;
+      margin-right: 2em;
+    }
+  }
+}

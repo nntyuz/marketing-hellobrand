@@ -1,0 +1,93 @@
+<section id="form" class="form">
+  <div class="w-container">
+    <h2>
+      Заполняй форму <br />
+      и погнали делать <br />
+      крутой Digital- <br />
+      маркетинг. <include src="./src/icons/arrow-title.html"></include>
+    </h2>
+    <form class="flex" action="">
+      <div class="flex column w-100">
+        <input type="text" name="name" placeholder="Имя Отчество" />
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Ваш номер телефона"
+        />
+        <input type="email" name="mail" placeholder="Email" />
+        <input type="text" name="post" placeholder="Должность:" />
+        <button class="form-button flex a-center j-center">
+          Начать сотрудничество
+        </button>
+        <label class="l-des flex a-center" for="personal">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="personal"
+            id="personal"
+          />
+          <span class="checkmark flex s-1">
+            <include src="./src/icons/checkmark.html"></include>
+          </span>
+          Даю своё согласие на обработку моих <br />
+          персональных данных
+        </label>
+      </div>
+      <div class="flex column w-100">
+        <input type="text" name="company" placeholder="Название компании:" />
+        <input type="text" name="budget" placeholder="Ваш бюджет на каналы:" />
+        <div class="txt">*Самый удобный способ связи для вас:</div>
+        <div class="container flex">
+          <label class="flex a-center l-1" for="email-checkbox"
+            >Email
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="email-checkbox"
+              id="email-checkbox"
+            />
+            <span class="checkmark flex">
+              <include src="./src/icons/checkmark.html"></include>
+            </span>
+          </label>
+          <label class="flex a-center l-1" for="whats-up-checkbox"
+            >WhatsApp
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="whats-up-checkbox"
+              id="whats-up-checkbox"
+            />
+            <span class="checkmark flex">
+              <include src="./src/icons/checkmark.html"></include>
+            </span>
+          </label>
+          <label class="flex a-center l-1" for="telegram-checkbox"
+            >Telegram
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="telegram-checkbox"
+              id="telegram-checkbox"
+            />
+            <span class="checkmark flex">
+              <include src="./src/icons/checkmark.html"></include>
+            </span>
+          </label>
+        </div>
+      </div>
+      <button class="form-button f-1 flex a-center j-center">
+        Начать сотрудничество
+      </button>
+      <label class="f-1 flex a-center" for="personal">
+        <input class="checkbox" type="checkbox" name="personal" id="personal" />
+        <span class="checkmark flex s-1">
+          <include src="./src/icons/checkmark.html"></include>
+        </span>
+        Даю своё согласие на обработку моих <br />
+        персональных данных
+      </label>
+    </form>
+  </div>
+</section>

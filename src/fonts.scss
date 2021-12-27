@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''), url('./fonts/lato-light.woff2') format('woff2'),
+    url('./fonts/lato-light.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('./fonts/lato-regular.woff2') format('woff2'),
+    url('./fonts/lato-regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('./fonts/NeueMachina-Regular.woff2') format('woff2'),
+    url('./fonts/NeueMachina-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''), url('./fonts/NeueMachina-Light.woff2') format('woff2'),
+    url('./fonts/NeueMachina-Light.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('./fonts/gotham-pro-regular.woff2') format('woff2'),
+    url('./fonts/gotham-pro-regular.woff') format('woff');
+  font-display: swap;
+}

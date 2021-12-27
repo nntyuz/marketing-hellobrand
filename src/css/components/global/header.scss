@@ -1,0 +1,105 @@
+.header {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  z-index: 10;
+  .burger {
+    cursor: pointer;
+    stroke: var(--color-light-1);
+    margin-right: 107px;
+    transition: 600ms;
+    &:hover {
+      stroke: var(--color-green-1);
+    }
+    @include md {
+      margin-right: 70px;
+      svg {
+        width: 48px;
+        height: 30px;
+      }
+    }
+  }
+  .social-header {
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--color-grey-1);
+    border-radius: 100%;
+    stroke: var(--color-light-1);
+    padding-right: 2px;
+    transition: 600ms;
+    &:last-child {
+      stroke: none;
+      fill: var(--color-light-1);
+      margin-left: 12px;
+      padding-right: 0;
+    }
+    &:hover {
+      border: 1px solid var(--color-green-1);
+      stroke: var(--color-green-1);
+      &:last-child {
+        stroke: none;
+        fill: var(--color-green-1);
+      }
+    }
+    @include xs {
+      display: none;
+    }
+  }
+  .phone-header {
+    font-family: 'Neue Machina', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    a {
+      color: var(--color-light-1);
+      transition: 600ms;
+      &:first-child {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 16px;
+        @include md {
+          font-size: 24px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+        @include sm {
+          font-size: 22px;
+          line-height: 22px;
+        }
+      }
+      &:last-child {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 0;
+        @include md {
+          font-size: 20px;
+          line-height: 20px;
+        }
+        @include sm {
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+      &:hover {
+        color: var(--color-green-1);
+      }
+      @include xs {
+        display: none;
+      }
+    }
+  }
+  .phone-mob {
+    display: none;
+    @include xs {
+      display: block;
+      svg {
+        fill: var(--color-light-1);
+      }
+      &:hover {
+        svg {
+          fill: var(--color-green-1);
+        }
+      }
+    }
+  }
+}
